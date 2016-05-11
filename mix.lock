@@ -1,0 +1,2 @@
+%{"inflections": {:git, "https://github.com/nathanfaucett/ex-inflections.git", "77a973bb28ebc74405be7503ef72fef85d69a785", []},
+  "inflector": {:git, "https://github.com/nathanfaucett/ex-inflector.git", "b72a8f4a2b5708a29f58022c53dbdef15a205bf6", []}}
