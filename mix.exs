@@ -3,6 +3,8 @@ defmodule InflectionsEn.Mixfile do
 
   def project do
     [app: :inflections_en,
+    description: description,
+    package: package,
      version: "0.0.1",
      elixir: "~> 1.2",
      build_embedded: Mix.env == :prod,
@@ -28,9 +30,26 @@ defmodule InflectionsEn.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    [
-        {:inflector, git: "https://github.com/nathanfaucett/ex-inflector.git"},
-        {:inflections, git: "https://github.com/nathanfaucett/ex-inflections.git"}
+    [{:inflector, "~> 0.0.11"},
+    {:inflections, "~> 0.0.1"}]
+  end
+
+  defp description do
+   """
+   inflector helpers for managing different locales
+   """
+ end
+
+  defp package do
+    [# These are the default files included in the package
+      name: :inflections_en,
+      files: ["lib", "mix.exs", "README*", "LICENSE*"],
+      maintainers: ["Nathan Faucett"],
+      licenses: ["MIT"],
+      links: %{
+        "GitHub" => "https://github.com/nathanfaucett/ex-inflections_en",
+        "Docs" => "https://github.com/nathanfaucett/ex-inflections_en"
+      }
     ]
   end
 end
