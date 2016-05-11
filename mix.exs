@@ -36,7 +36,7 @@ defmodule InflectionsEn.Mixfile do
 
   defp description do
    """
-   inflector helpers for managing different locales
+   inflector english rules
    """
  end
 
