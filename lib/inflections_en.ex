@@ -1,6 +1,5 @@
 defmodule InflectionsEn do
     use Application
-    use Supervisor
 
     def start(_type, _args) do
         en = Inflector.new()
